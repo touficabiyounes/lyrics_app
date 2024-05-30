@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.geometry.Insets?>
+<AnchorPane styleClass="result" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" prefHeight="230.0" prefWidth="160.0">
+    <children>
+        <ImageView fx:id="coverArt" styleClass="coverArt" fitHeight="160.0" fitWidth="160.0" layoutX="0.0" layoutY="0.0" preserveRatio="true">
+            <image>
+                <Image fx:id="coverImage" url="@defaultCover.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="loadCover" layoutX="30" layoutY="50" text="Load Cover" />
+        <Label fx:id="songTitle" layoutX="10.0" layoutY="170.0" text="Title" maxWidth="145.0" wrapText="true" textFill="#FFF"/>
+        <Label fx:id="songArtist" layoutX="10.0" layoutY="240.0" text="Artist" maxWidth="145.0" wrapText="true" lineSpacing="0" textFill="#FFF"/>
+    </children>
+    <stylesheets>
+        <URL value="@songResult.css" />
+    </stylesheets>
+
+</AnchorPane>

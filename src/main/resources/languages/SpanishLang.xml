@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang>
+    <title>Título :</title>
+    <artist>Artista :</artist>
+    <lyrics>Letras :</lyrics>
+    <playlists>Playlists :</playlists>
+    <rankMin>Rango mínimo :</rankMin>
+    <noresults>Sin resultados</noresults>
+    <search>BUSCAR</search>
+    <favorites>Favoritos</favorites>
+    <preferences>Preferencias</preferences>
+    <artistFav>Artista Favorito</artistFav>
+    <showCover>Mostrar Portada</showCover>
+    <playlistSelect>Seleccionar Playlist</playlistSelect>
+    <add_rem>Agregar / Eliminar</add_rem>
+    <removePlaylist>ELIMINAR</removePlaylist>
+    <addPlaylist>AÑADIR</addPlaylist>
+    <newPlaylistname>Nueva Playlist</newPlaylistname>
+    <playlist>Playlist</playlist>
+    <songRank>Rango : </songRank>
+    <playlistLabelAdd>Añadido a</playlistLabelAdd>
+    <playlistLabelRem>Eliminado de</playlistLabelRem>
+    <language>Idioma</language>
+</lang>

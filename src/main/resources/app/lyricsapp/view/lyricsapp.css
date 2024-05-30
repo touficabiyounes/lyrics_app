@@ -1,0 +1,71 @@
+.root{
+    -fx-font-size: 11pt;
+    -fx-font-family: "Arial";
+    -fx-background-color: #000;
+}
+
+.header {
+    -fx-background-color: #FFF;
+    -fx-text-fill: #000;
+    -fx-font-size: 11pt;
+    -fx-font-family: "Arial";
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-start-margin: 10px;
+    -fx-end-margin: 10px;
+}
+
+.appName{
+    -fx-font-size: 14pt;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-text-fill: #000;
+}
+
+.button{
+    -fx-font-size: 11pt;
+    -fx-font-family: "Arial";
+}
+
+.button{
+    -fx-border-width: 0px;
+    -fx-background-color: #D8D8D8;
+    -fx-text-fill: #000;
+    -fx-background-radius: 15px;
+    -fx-font-weight: bold;
+}
+.button:hover{
+    -fx-background-color: #FC3C02;
+    -fx-text-fill: #FFF;
+}
+
+.scrollPane, .scrollPane .viewport{
+    -fx-background-color: transparent;
+}
+
+.playlistMenu{
+    -fx-background-color: #FFF;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+
+.playlistName{
+    -fx-font-size: 15pt;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-text-fill: #000;
+}
+
+.songLyrics{
+    /* textarea javafx background color to black */
+    -fx-font-size: 11pt;
+    -fx-font-family: "Arial";
+    -fx-text-fill: #FFF;
+    -fx-padding: 0px;
+    -fx-border-width: 0px;
+}
+
+.songLyrics .content {
+    -fx-background-color: #000;
+    -fx-text-fill: #FFF;
+}

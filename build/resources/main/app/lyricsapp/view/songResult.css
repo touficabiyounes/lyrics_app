@@ -1,0 +1,31 @@
+.result{
+    -fx-background-color: #282828;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    overflow: hidden;
+}
+
+.result:hover{
+    -fx-background-color: #454545;
+}
+
+.coverArt{
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+
+.coverImage{
+    -fx-border-radius: 10px;
+}
+
+#songTitle{
+    -fx-font-size: 10pt;
+    -fx-font-weight: bold;
+}
+
+#songArtist{
+    -fx-font-size: 9pt;
+    -fx-opacity: 0.5;
+    -fx-padding: 0px 0px 5px 0px;
+
+}

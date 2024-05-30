@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="870.0" maxWidth="600.0" minHeight="600.0" minWidth="870.0" prefHeight="600.0" prefWidth="870.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.lyricsapp.controller.LyricsAppController">
+    <stylesheets>
+        <URL value="@lyricsapp.css" />
+    </stylesheets>
+    <!-- menu bar -->
+    <MenuBar fx:id="menuBar" prefHeight="32.0" prefWidth="870.0">
+        <Menu mnemonicParsing="false" text="Preferences">
+            <CheckMenuItem fx:id="minRankOption" mnemonicParsing="false" selected="true" text="Minimum rank" />
+            <CheckMenuItem fx:id="showCoverOption" mnemonicParsing="false" text="Show covers" />
+        </Menu>
+        <Menu mnemonicParsing="false" text="Artiste fav" />
+        <Menu mnemonicParsing="false" text="Languages">
+            <MenuItem fx:id="english" mnemonicParsing="false" text="English" />
+            <MenuItem fx:id="french" mnemonicParsing="false" text="Français" />
+            <MenuItem fx:id="spanish" mnemonicParsing="false" text="Español" />
+        </Menu>
+
+    </MenuBar>
+
+    <!-- header div in 2 horizontal sections -->
+    <AnchorPane layoutX="11.0" layoutY="38.0" prefHeight="115.0" prefWidth="832.0" styleClass="header">
+            <!-- left section -->
+            <AnchorPane prefHeight="115.0" prefWidth="380.0">
+
+                    <Label layoutX="10.0" layoutY="5.0" styleClass="appName" text="LYRICSFUZE" textFill="#000" />
+                    <!-- INPUTS -->
+                    <Label fx:id="titleText" layoutX="10.0" layoutY="50.0" text="Title :" />
+                    <TextField fx:id="title" layoutX="63.0" layoutY="46.0" prefHeight="27.0" prefWidth="172.0" />
+                    <Label fx:id="artistText" layoutX="10.0" layoutY="85.0" text="Artist :" />
+                    <TextField fx:id="artist" layoutX="63.0" layoutY="80.0" prefHeight="10.0" prefWidth="172.0" />
+                    <!-- SEARCH -->
+                    <Button fx:id="search" layoutX="248.0" layoutY="58.0" mnemonicParsing="false" prefHeight="30.0" styleClass="button" text="SEARCH" />
+
+            </AnchorPane>
+            <!-- right section -->
+            <AnchorPane layoutX="400.0" prefHeight="115.0" prefWidth="452.0">
+                    <Label fx:id="rankMin" alignment="CENTER_RIGHT" layoutX="3.0" layoutY="13.0" prefHeight="17.0" prefWidth="138.0" text="Minimum rank :" textAlignment="RIGHT" />
+                    <TextField fx:id="minRankInput" layoutX="150.0" layoutY="8.0" prefHeight="27.0" prefWidth="42.0" text="0" />
+                    <ComboBox fx:id="playlists" layoutX="150.0" layoutY="44.0" prefHeight="27.0" prefWidth="172.0" promptText="Select playlist" />
+
+                    <!-- INPUT -->
+                    <Label fx:id="lyricsText" alignment="CENTER_RIGHT" layoutX="28.0" layoutY="85.0" prefHeight="18.0" prefWidth="113.0" text="Lyrics :" textAlignment="RIGHT" />
+                    <TextField fx:id="lyrics" layoutX="150.0" layoutY="81.0" prefHeight="27.0" prefWidth="172.0" />
+                    <!-- SEARCH -->
+                    <Button fx:id="searchLyrics" layoutX="338.0" layoutY="79.0" mnemonicParsing="false" prefHeight="30.0" styleClass="button" text="SEARCH" />
+                    <!-- PLAYLISTS MENU-->
+                    <Label fx:id="playlistText" alignment="CENTER_RIGHT" layoutX="4.0" layoutY="36.0" maxWidth="200.0" prefHeight="43.0" prefWidth="138.0" text="Playlists :" textAlignment="RIGHT" />
+            </AnchorPane>
+    </AnchorPane>
+    <AnchorPane id="playlistMenu" styleClass="playlistMenu" layoutX="10.0" layoutY="159.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="43.0" prefWidth="852.0" visible="false">
+            <Label id="playlistName" layoutX="10.0" layoutY="7.0" prefHeight="27.0" prefWidth="158.0" styleClass="playlistName" text="" />
+
+            <Button fx:id="removePlaylist" styleClass="button" layoutX="240.0" layoutY="9.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="100.0" text="REMOVE" />
+            <TextField fx:id="newPlaylistName" layoutX="440.0" layoutY="7.0" prefHeight="27.0" prefWidth="280.0" promptText="New playlist" />
+            <Button fx:id="addPlaylist" styleClass="button" layoutX="740.0" layoutY="7.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="100.0" text="ADD" />
+
+    </AnchorPane>
+    <!-- results -->
+    <ScrollPane id="scrollPane" hbarPolicy="NEVER" layoutX="10.0" layoutY="216.0" prefHeight="382.0" prefWidth="852.0" styleClass="scrollPane" vbarPolicy="NEVER">
+        <GridPane id="resultsPane">
+        <columnConstraints>
+            <ColumnConstraints />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints />
+        </rowConstraints>
+        </GridPane>
+    </ScrollPane>
+
+
+</AnchorPane>
